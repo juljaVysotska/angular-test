@@ -1,0 +1,21 @@
+<section id="tasks">
+    <header>
+        <h1>{{user.name}}'s tasks</h1>
+
+        <menu>
+            <button (click)="onAddTask()">Add Task</button>
+        </menu>
+    </header>
+
+    <ul>
+        @for (task of usersTasks; track $index) {
+        <li>
+            <app-task [task]="task"></app-task>
+        </li>
+        }
+    </ul>
+</section>
+
+@if (isAddingTask) {
+    <app-new-task-dialog (isModalClosed)="onModalOpen()" [userId]="user.id"></app-new-task-dialog>
+}

@@ -1,0 +1,34 @@
+<!-- option 1 -->
+<!-- <div>
+    <button (click)="onSelectUser()">
+        <img [src]="imagePath" [alt]="randomUser.name"/>
+        <span>{{randomUser.name}}</span>
+    </button>
+</div> -->
+
+
+<!-- option 2 with signals -->
+ <!-- <div>
+    <button (click)="onSelectUser()">
+        <img [src]="imagePath()" [alt]="randomUser().name"/>
+        <span>{{randomUser().name}}</span>
+    </button>
+</div> -->
+
+<!-- Back to black -->
+ <!-- decorator imput -->
+<app-card>
+    <div>
+        <button [class.active]="isSelected" (click)="onUserSelect()">
+            <img [src]="imagePath" [alt]="user.name"/>
+            <span>{{user.name}}</span>
+        </button>
+    </div>
+</app-card>
+<!-- signal input  -->
+ <!-- <div>
+    <button >
+        <img [src]="imagePath()" [alt]="name()"/>
+        <span>{{name()}}</span>
+    </button>
+</div> -->
