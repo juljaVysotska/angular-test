@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  imports: [],
+  // imports: [],
+  standalone: false,
   selector: 'app-card',
   styleUrl: './card.component.scss',
   templateUrl: './card.component.html',
 })
-export class CardComponent {}
+export class CardComponent { }

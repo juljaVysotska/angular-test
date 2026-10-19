@@ -1,14 +1,17 @@
-import { Component, computed, EventEmitter, Input, input, output, Output, signal } from '@angular/core';
-import { DUMMY_USERS } from '../../utils/dummy-data';
+import { Component, computed, EventEmitter, Input, input, NgModule, output, Output, signal } from '@angular/core';
+
 import { User } from './user.model';
 import { CardComponent } from '../../shared/card/card.component';
 
 @Component({
-  imports: [CardComponent],
+  // imports: [CardComponent],
+  standalone: false,
   selector: 'app-user',
   styleUrl: './user.component.scss',
   templateUrl: './user.component.html',
 })
+
+
 export class UserComponent {
   // Option 1 to update state
   // randomUser = DUMMY_USERS[1]

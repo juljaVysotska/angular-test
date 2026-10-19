@@ -31,9 +31,9 @@ const dummyTasks: Task[] = [
   },
 ]
 @Component({
-  imports: [TaskComponent, NewTaskDialogComponent],
+  // imports: [TaskComponent, NewTaskDialogComponent],
   selector: 'app-tasks',
-  standalone: true,
+  standalone: false,
   styleUrl: './tasks.component.scss',
   templateUrl: './tasks.component.html',
 })

@@ -3,7 +3,8 @@ import { FormsModule } from '@angular/forms'
 import { TasksService } from '../tasks.service';
 
 @Component({
-  imports: [FormsModule],
+  // imports: [FormsModule],
+  standalone: false,
   selector: 'app-new-task-dialog',
   styleUrl: './new-task-dialog.component.scss',
   templateUrl: './new-task-dialog.component.html',
